@@ -1,3 +1,10 @@
 <script>
-  window.location.href="https://discbots.cf/bots.veiw?id=755465295845523477"
+  function getUrlParam(parameter, defaultValue) {
+    const urlParams = new URLSearchParams(window.location.search);
+    return urlParams.get(parameter) || defaultValue;
+  }
+
+  var code = getUrlParam('id', 'na')
+  
+  window.location.href="https://discbots.cf/bots.veiw?id="+id
 </script>
